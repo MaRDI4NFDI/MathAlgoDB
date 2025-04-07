@@ -1,0 +1,673 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://mardi4nfdi.de/mathalgodb/0.1#"
+     xml:base="https://mardi4nfdi.de/mathalgodb/0.1"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:bibo="http://purl.org/ontology/bibo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://mardi4nfdi.de/mathalgodb/0.1">
+        <owl:versionIRI rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1"/>
+        <terms:bibliographicCitation>MaRDI Task Area 2 - Scientific Computing @ University of Münster. MathAlgoDB - Algorithm Knowledge Graph - Ontology (Version 0.1). MaRDI (Mathematical Research Data Initiative), 2022. https://mardi4nfdi.de/mathalgodb/0.1</terms:bibliographicCitation>
+        <terms:creator>Christian Himpe (https://orcid.org/0000-0003-2194-6754)</terms:creator>
+        <terms:creator>Frank Wübbeling (https://orcid.org/0000-0002-2375-2008)</terms:creator>
+        <terms:creator>Hendrik Kleikamp (https://orcid.org/0000-0003-1264-5941)</terms:creator>
+        <terms:creator>René Fritze (https://orcid.org/0000-0002-9548-2238)</terms:creator>
+        <terms:creator>Stephan Rave (https://orcid.org/0000-0003-0439-7212)</terms:creator>
+        <terms:description>This vocabulary and grammar defines which types of objects are admissible to the MathAlgoDB -
+                        the algorithm knowledge graph - and by which properties they can relate. All in all five
+                        classes, &quot;problem&quot;, &quot;algorithm&quot;, &quot;benchmark&quot;, &quot;software&quot;, &quot;publication&quot;, are defined,
+                        as well as a minimal but intuitively intelligible number of properties. As opposed to the more
+                        liberal WikiData, MathAlgoDB relies on the strict adherence to the ontology to provide a reliable
+                        machine-readable database of (numerical) algorithm knowledge.</terms:description>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0"/>
+        <terms:title>Algorithm Knowledge Graph Ontology</terms:title>
+        <bibo:status>Draft</bibo:status>
+        <vann:preferredNamespacePrefix>mathalgodb</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>https://mardi4nfdi.de/mathalgodb/0.1#</vann:preferredNamespaceUri>
+        <owl:versionInfo>0.1</owl:versionInfo>
+        <foaf:logo rdf:resource="https://workshop.mardi.ovh/images/MaRDI_Logo_S_5_rgb.svg"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/bibliographicCitation -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/status -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/status"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#cardinality -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#cardinality"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/logo -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/logo"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://mardi4nfdi.de/mathalgodb/0.1#analyzedIn -->
+
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathalgodb/0.1#analyzedIn">
+        <rdfs:domain rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#algorithm"/>
+        <rdfs:range rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#publication"/>
+        <rdfs:label>is analyzed in</rdfs:label>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">60</owl:cardinality>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathalgodb/0.1#analyzes -->
+
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathalgodb/0.1#analyzes">
+        <owl:inverseOf rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#analyzedIn"/>
+        <rdfs:domain rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#publication"/>
+        <rdfs:range rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#algorithm"/>
+        <rdfs:label>analyzes</rdfs:label>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">60</owl:cardinality>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathalgodb/0.1#appliedIn -->
+
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathalgodb/0.1#appliedIn">
+        <rdfs:domain rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#algorithm"/>
+        <rdfs:range rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#publication"/>
+        <rdfs:label>is applied in</rdfs:label>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">80</owl:cardinality>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathalgodb/0.1#applies -->
+
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathalgodb/0.1#applies">
+        <owl:inverseOf rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#appliedIn"/>
+        <rdfs:domain rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#publication"/>
+        <rdfs:range rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#algorithm"/>
+        <rdfs:label>applies</rdfs:label>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">80</owl:cardinality>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathalgodb/0.1#componentOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathalgodb/0.1#componentOf">
+        <owl:inverseOf rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#hasComponent"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#algorithm"/>
+        <rdfs:range rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#algorithm"/>
+        <rdfs:label>is component of</rdfs:label>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">40</owl:cardinality>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathalgodb/0.1#documentedIn -->
+
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathalgodb/0.1#documentedIn">
+        <rdfs:domain rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#realization"/>
+        <rdfs:range rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#publication"/>
+        <rdfs:label>is documented in</rdfs:label>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">120</owl:cardinality>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathalgodb/0.1#documents -->
+
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathalgodb/0.1#documents">
+        <owl:inverseOf rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#documentedIn"/>
+        <rdfs:domain rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#publication"/>
+        <rdfs:range rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#realization"/>
+        <rdfs:label>documents</rdfs:label>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">120</owl:cardinality>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathalgodb/0.1#hasComponent -->
+
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathalgodb/0.1#hasComponent">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#algorithm"/>
+        <rdfs:range rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#algorithm"/>
+        <rdfs:label>has component</rdfs:label>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">40</owl:cardinality>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathalgodb/0.1#hasSubclass -->
+
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathalgodb/0.1#hasSubclass">
+        <owl:inverseOf rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#subclassOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#algorithm"/>
+        <rdfs:range rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#algorithm"/>
+        <rdfs:label>has subclass</rdfs:label>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">20</owl:cardinality>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathalgodb/0.1#implementedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathalgodb/0.1#implementedBy">
+        <owl:inverseOf rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#implements"/>
+        <rdfs:domain rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#algorithm"/>
+        <rdfs:range rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#software"/>
+        <rdfs:label>is implemented by</rdfs:label>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">100</owl:cardinality>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathalgodb/0.1#implements -->
+
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathalgodb/0.1#implements">
+        <rdfs:domain rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#software"/>
+        <rdfs:range rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#algorithm"/>
+        <rdfs:label>implements</rdfs:label>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">100</owl:cardinality>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathalgodb/0.1#instanceOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathalgodb/0.1#instanceOf">
+        <rdfs:domain rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#benchmark"/>
+        <rdfs:range rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#problem"/>
+        <rdfs:label>is instance of</rdfs:label>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">100</owl:cardinality>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathalgodb/0.1#instantiates -->
+
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathalgodb/0.1#instantiates">
+        <owl:inverseOf rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#instanceOf"/>
+        <rdfs:domain rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#problem"/>
+        <rdfs:range rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#benchmark"/>
+        <rdfs:label>instantiates</rdfs:label>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">100</owl:cardinality>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathalgodb/0.1#inventedIn -->
+
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathalgodb/0.1#inventedIn">
+        <rdfs:domain rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#algorithm"/>
+        <rdfs:range rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#publication"/>
+        <rdfs:label>is invented in</rdfs:label>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">50</owl:cardinality>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathalgodb/0.1#invents -->
+
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathalgodb/0.1#invents">
+        <owl:inverseOf rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#inventedIn"/>
+        <rdfs:domain rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#publication"/>
+        <rdfs:range rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#algorithm"/>
+        <rdfs:label>invents</rdfs:label>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">50</owl:cardinality>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathalgodb/0.1#relatedTo -->
+
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathalgodb/0.1#relatedTo">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#algorithm"/>
+        <rdfs:range rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#algorithm"/>
+        <rdfs:label>is related to</rdfs:label>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">30</owl:cardinality>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathalgodb/0.1#reviewedIn -->
+
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathalgodb/0.1#reviewedIn">
+        <rdfs:domain rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#algorithm"/>
+        <rdfs:range rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#publication"/>
+        <rdfs:label>is surveyed in</rdfs:label>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">90</owl:cardinality>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathalgodb/0.1#reviews -->
+
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathalgodb/0.1#reviews">
+        <owl:inverseOf rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#reviewedIn"/>
+        <rdfs:domain rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#publication"/>
+        <rdfs:range rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#algorithm"/>
+        <rdfs:label>surveys</rdfs:label>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">90</owl:cardinality>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathalgodb/0.1#solvedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathalgodb/0.1#solvedBy">
+        <owl:inverseOf rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#solves"/>
+        <rdfs:domain rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#problem"/>
+        <rdfs:range rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#algorithm"/>
+        <rdfs:label>is solved by</rdfs:label>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">10</owl:cardinality>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathalgodb/0.1#solves -->
+
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathalgodb/0.1#solves">
+        <rdfs:domain rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#algorithm"/>
+        <rdfs:range rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#problem"/>
+        <rdfs:label>solves</rdfs:label>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">10</owl:cardinality>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathalgodb/0.1#specializedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathalgodb/0.1#specializedBy">
+        <owl:inverseOf rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#specializes"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#problem"/>
+        <rdfs:range rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#problem"/>
+        <rdfs:label>specializedBy</rdfs:label>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:cardinality>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathalgodb/0.1#specializes -->
+
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathalgodb/0.1#specializes">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#problem"/>
+        <rdfs:range rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#problem"/>
+        <rdfs:label>specializes</rdfs:label>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:cardinality>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathalgodb/0.1#studiedIn -->
+
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathalgodb/0.1#studiedIn">
+        <rdfs:domain rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#algorithm"/>
+        <rdfs:range rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#publication"/>
+        <rdfs:label>is studied in</rdfs:label>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">70</owl:cardinality>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathalgodb/0.1#studies -->
+
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathalgodb/0.1#studies">
+        <owl:inverseOf rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#studiedIn"/>
+        <rdfs:domain rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#publication"/>
+        <rdfs:range rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#algorithm"/>
+        <rdfs:label>studies</rdfs:label>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">70</owl:cardinality>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathalgodb/0.1#subclassOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathalgodb/0.1#subclassOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#algorithm"/>
+        <rdfs:range rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#algorithm"/>
+        <rdfs:label>is subclass of</rdfs:label>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">20</owl:cardinality>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathalgodb/0.1#testedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathalgodb/0.1#testedBy">
+        <owl:inverseOf rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#tests"/>
+        <rdfs:domain rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#benchmark"/>
+        <rdfs:range rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#software"/>
+        <rdfs:label>is tested by</rdfs:label>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">110</owl:cardinality>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathalgodb/0.1#tests -->
+
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathalgodb/0.1#tests">
+        <rdfs:domain rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#software"/>
+        <rdfs:range rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#benchmark"/>
+        <rdfs:label>tests</rdfs:label>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">110</owl:cardinality>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathalgodb/0.1#usedIn -->
+
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathalgodb/0.1#usedIn">
+        <rdfs:domain rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#realization"/>
+        <rdfs:range rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#publication"/>
+        <rdfs:label>is used in</rdfs:label>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">130</owl:cardinality>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathalgodb/0.1#uses -->
+
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathalgodb/0.1#uses">
+        <owl:inverseOf rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#usedIn"/>
+        <rdfs:domain rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#publication"/>
+        <rdfs:range rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#realization"/>
+        <rdfs:label>uses</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/spar/datacite/hasIdentifier -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/spar/datacite/hasIdentifier">
+        <rdfs:domain rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#identifiable"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>has identifier</rdfs:label>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:cardinality>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathalgodb/0.1#category -->
+
+
+    <owl:DatatypeProperty rdf:about="https://mardi4nfdi.de/mathalgodb/0.1#category">
+        <rdfs:domain rdf:resource="https://mardi4nfdi.de/mathalgodb/0.1#all_objects"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>has category</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://mardi4nfdi.de/mathalgodb/0.1#algorithm -->
+
+
+    <owl:Class rdf:about="https://mardi4nfdi.de/mathalgodb/0.1#algorithm">
+        <rdfs:comment>The main building blocks of the graph are algorithms. Here you can take a look at all algorithms documented in the graph.</rdfs:comment>
+        <rdfs:label>Algorithm</rdfs:label>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">10</owl:cardinality>
+    </owl:Class>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathalgodb/0.1#all_objects -->
+
+
+    <owl:Class rdf:about="https://mardi4nfdi.de/mathalgodb/0.1#all_objects">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathalgodb/0.1#algorithm"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathalgodb/0.1#benchmark"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathalgodb/0.1#problem"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathalgodb/0.1#publication"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathalgodb/0.1#software"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label>All allgodata objects</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathalgodb/0.1#benchmark -->
+
+
+    <owl:Class rdf:about="https://mardi4nfdi.de/mathalgodb/0.1#benchmark">
+        <rdfs:comment>For testing, evaluating and comparing numerical algorithms, so called benchmark problems are often useful.</rdfs:comment>
+        <rdfs:label>Benchmark</rdfs:label>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">40</owl:cardinality>
+    </owl:Class>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathalgodb/0.1#identifiable -->
+
+
+    <owl:Class rdf:about="https://mardi4nfdi.de/mathalgodb/0.1#identifiable">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathalgodb/0.1#benchmark"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathalgodb/0.1#publication"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathalgodb/0.1#software"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label>Identifiable</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathalgodb/0.1#problem -->
+
+
+    <owl:Class rdf:about="https://mardi4nfdi.de/mathalgodb/0.1#problem">
+        <rdfs:comment>When interested in algorithms solving a certain problem at hand, we here provide an overview of all problems defined in the graph.</rdfs:comment>
+        <rdfs:label>Algorithmic Task</rdfs:label>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">30</owl:cardinality>
+        <skos:definition>An engineering challenge that includes a mathematical part</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathalgodb/0.1#publication -->
+
+
+    <owl:Class rdf:about="https://mardi4nfdi.de/mathalgodb/0.1#publication">
+        <rdfs:comment>To find theoretical or numerical results on the performance of algorithms, take a look at the related publications in this list.</rdfs:comment>
+        <rdfs:label>Publication</rdfs:label>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">100</owl:cardinality>
+    </owl:Class>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathalgodb/0.1#realization -->
+
+
+    <owl:Class rdf:about="https://mardi4nfdi.de/mathalgodb/0.1#realization">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathalgodb/0.1#benchmark"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathalgodb/0.1#software"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label>Realization</rdfs:label>
+        <skos:definition>
+    Union of all MathAlgoDB-Classes that *may* have a unique identifier.
+    </skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathalgodb/0.1#software -->
+
+
+    <owl:Class rdf:about="https://mardi4nfdi.de/mathalgodb/0.1#software">
+        <rdfs:comment>This table contains software packages that implement some of the algorithms from the graph.</rdfs:comment>
+        <rdfs:label>Software</rdfs:label>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">20</owl:cardinality>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

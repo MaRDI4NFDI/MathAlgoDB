@@ -1,0 +1,406 @@
+<https://mardi4nfdi.de/mathalgodb/0.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://mardi4nfdi.de/mathalgodb/0.1> <http://www.w3.org/2002/07/owl#versionIRI> <https://mardi4nfdi.de/mathalgodb/0.1> .
+<https://mardi4nfdi.de/mathalgodb/0.1> <http://purl.org/dc/terms/bibliographicCitation> "MaRDI Task Area 2 - Scientific Computing @ University of Münster. MathAlgoDB - Algorithm Knowledge Graph - Ontology (Version 0.1). MaRDI (Mathematical Research Data Initiative), 2022. https://mardi4nfdi.de/mathalgodb/0.1" .
+<https://mardi4nfdi.de/mathalgodb/0.1> <http://purl.org/dc/terms/creator> "Christian Himpe (https://orcid.org/0000-0003-2194-6754)" .
+<https://mardi4nfdi.de/mathalgodb/0.1> <http://purl.org/dc/terms/creator> "Frank Wübbeling (https://orcid.org/0000-0002-2375-2008)" .
+<https://mardi4nfdi.de/mathalgodb/0.1> <http://purl.org/dc/terms/creator> "Hendrik Kleikamp (https://orcid.org/0000-0003-1264-5941)" .
+<https://mardi4nfdi.de/mathalgodb/0.1> <http://purl.org/dc/terms/creator> "René Fritze (https://orcid.org/0000-0002-9548-2238)" .
+<https://mardi4nfdi.de/mathalgodb/0.1> <http://purl.org/dc/terms/creator> "Stephan Rave (https://orcid.org/0000-0003-0439-7212)" .
+<https://mardi4nfdi.de/mathalgodb/0.1> <http://purl.org/dc/terms/description> "This vocabulary and grammar defines which types of objects are admissible to the MathAlgoDB -\n                        the algorithm knowledge graph - and by which properties they can relate. All in all five\n                        classes, \"problem\", \"algorithm\", \"benchmark\", \"software\", \"publication\", are defined,\n                        as well as a minimal but intuitively intelligible number of properties. As opposed to the more\n                        liberal WikiData, MathAlgoDB relies on the strict adherence to the ontology to provide a reliable\n                        machine-readable database of (numerical) algorithm knowledge." .
+<https://mardi4nfdi.de/mathalgodb/0.1> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0> .
+<https://mardi4nfdi.de/mathalgodb/0.1> <http://purl.org/dc/terms/title> "Algorithm Knowledge Graph Ontology" .
+<https://mardi4nfdi.de/mathalgodb/0.1> <http://purl.org/ontology/bibo/status> "Draft" .
+<https://mardi4nfdi.de/mathalgodb/0.1> <http://purl.org/vocab/vann/preferredNamespacePrefix> "mathalgodb" .
+<https://mardi4nfdi.de/mathalgodb/0.1> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://mardi4nfdi.de/mathalgodb/0.1#" .
+<https://mardi4nfdi.de/mathalgodb/0.1> <http://www.w3.org/2002/07/owl#versionInfo> "0.1" .
+<https://mardi4nfdi.de/mathalgodb/0.1> <http://xmlns.com/foaf/0.1/logo> <https://workshop.mardi.ovh/images/MaRDI_Logo_S_5_rgb.svg> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/bibliographicCitation
+<http://purl.org/dc/terms/bibliographicCitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/ontology/bibo/status
+<http://purl.org/ontology/bibo/status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#cardinality
+<http://www.w3.org/2002/07/owl#cardinality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/logo
+<http://xmlns.com/foaf/0.1/logo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://mardi4nfdi.de/mathalgodb/0.1#analyzedIn
+<https://mardi4nfdi.de/mathalgodb/0.1#analyzedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://mardi4nfdi.de/mathalgodb/0.1#analyzedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://mardi4nfdi.de/mathalgodb/0.1#algorithm> .
+<https://mardi4nfdi.de/mathalgodb/0.1#analyzedIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://mardi4nfdi.de/mathalgodb/0.1#publication> .
+<https://mardi4nfdi.de/mathalgodb/0.1#analyzedIn> <http://www.w3.org/2000/01/rdf-schema#label> "is analyzed in" .
+<https://mardi4nfdi.de/mathalgodb/0.1#analyzedIn> <http://www.w3.org/2002/07/owl#cardinality> "60"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# https://mardi4nfdi.de/mathalgodb/0.1#analyzes
+<https://mardi4nfdi.de/mathalgodb/0.1#analyzes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://mardi4nfdi.de/mathalgodb/0.1#analyzes> <http://www.w3.org/2002/07/owl#inverseOf> <https://mardi4nfdi.de/mathalgodb/0.1#analyzedIn> .
+<https://mardi4nfdi.de/mathalgodb/0.1#analyzes> <http://www.w3.org/2000/01/rdf-schema#domain> <https://mardi4nfdi.de/mathalgodb/0.1#publication> .
+<https://mardi4nfdi.de/mathalgodb/0.1#analyzes> <http://www.w3.org/2000/01/rdf-schema#range> <https://mardi4nfdi.de/mathalgodb/0.1#algorithm> .
+<https://mardi4nfdi.de/mathalgodb/0.1#analyzes> <http://www.w3.org/2000/01/rdf-schema#label> "analyzes" .
+<https://mardi4nfdi.de/mathalgodb/0.1#analyzes> <http://www.w3.org/2002/07/owl#cardinality> "60"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# https://mardi4nfdi.de/mathalgodb/0.1#appliedIn
+<https://mardi4nfdi.de/mathalgodb/0.1#appliedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://mardi4nfdi.de/mathalgodb/0.1#appliedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://mardi4nfdi.de/mathalgodb/0.1#algorithm> .
+<https://mardi4nfdi.de/mathalgodb/0.1#appliedIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://mardi4nfdi.de/mathalgodb/0.1#publication> .
+<https://mardi4nfdi.de/mathalgodb/0.1#appliedIn> <http://www.w3.org/2000/01/rdf-schema#label> "is applied in" .
+<https://mardi4nfdi.de/mathalgodb/0.1#appliedIn> <http://www.w3.org/2002/07/owl#cardinality> "80"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# https://mardi4nfdi.de/mathalgodb/0.1#applies
+<https://mardi4nfdi.de/mathalgodb/0.1#applies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://mardi4nfdi.de/mathalgodb/0.1#applies> <http://www.w3.org/2002/07/owl#inverseOf> <https://mardi4nfdi.de/mathalgodb/0.1#appliedIn> .
+<https://mardi4nfdi.de/mathalgodb/0.1#applies> <http://www.w3.org/2000/01/rdf-schema#domain> <https://mardi4nfdi.de/mathalgodb/0.1#publication> .
+<https://mardi4nfdi.de/mathalgodb/0.1#applies> <http://www.w3.org/2000/01/rdf-schema#range> <https://mardi4nfdi.de/mathalgodb/0.1#algorithm> .
+<https://mardi4nfdi.de/mathalgodb/0.1#applies> <http://www.w3.org/2000/01/rdf-schema#label> "applies" .
+<https://mardi4nfdi.de/mathalgodb/0.1#applies> <http://www.w3.org/2002/07/owl#cardinality> "80"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# https://mardi4nfdi.de/mathalgodb/0.1#componentOf
+<https://mardi4nfdi.de/mathalgodb/0.1#componentOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://mardi4nfdi.de/mathalgodb/0.1#componentOf> <http://www.w3.org/2002/07/owl#inverseOf> <https://mardi4nfdi.de/mathalgodb/0.1#hasComponent> .
+<https://mardi4nfdi.de/mathalgodb/0.1#componentOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<https://mardi4nfdi.de/mathalgodb/0.1#componentOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://mardi4nfdi.de/mathalgodb/0.1#algorithm> .
+<https://mardi4nfdi.de/mathalgodb/0.1#componentOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://mardi4nfdi.de/mathalgodb/0.1#algorithm> .
+<https://mardi4nfdi.de/mathalgodb/0.1#componentOf> <http://www.w3.org/2000/01/rdf-schema#label> "is component of" .
+<https://mardi4nfdi.de/mathalgodb/0.1#componentOf> <http://www.w3.org/2002/07/owl#cardinality> "40"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# https://mardi4nfdi.de/mathalgodb/0.1#documentedIn
+<https://mardi4nfdi.de/mathalgodb/0.1#documentedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://mardi4nfdi.de/mathalgodb/0.1#documentedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://mardi4nfdi.de/mathalgodb/0.1#realization> .
+<https://mardi4nfdi.de/mathalgodb/0.1#documentedIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://mardi4nfdi.de/mathalgodb/0.1#publication> .
+<https://mardi4nfdi.de/mathalgodb/0.1#documentedIn> <http://www.w3.org/2000/01/rdf-schema#label> "is documented in" .
+<https://mardi4nfdi.de/mathalgodb/0.1#documentedIn> <http://www.w3.org/2002/07/owl#cardinality> "120"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# https://mardi4nfdi.de/mathalgodb/0.1#documents
+<https://mardi4nfdi.de/mathalgodb/0.1#documents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://mardi4nfdi.de/mathalgodb/0.1#documents> <http://www.w3.org/2002/07/owl#inverseOf> <https://mardi4nfdi.de/mathalgodb/0.1#documentedIn> .
+<https://mardi4nfdi.de/mathalgodb/0.1#documents> <http://www.w3.org/2000/01/rdf-schema#domain> <https://mardi4nfdi.de/mathalgodb/0.1#publication> .
+<https://mardi4nfdi.de/mathalgodb/0.1#documents> <http://www.w3.org/2000/01/rdf-schema#range> <https://mardi4nfdi.de/mathalgodb/0.1#realization> .
+<https://mardi4nfdi.de/mathalgodb/0.1#documents> <http://www.w3.org/2000/01/rdf-schema#label> "documents" .
+<https://mardi4nfdi.de/mathalgodb/0.1#documents> <http://www.w3.org/2002/07/owl#cardinality> "120"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# https://mardi4nfdi.de/mathalgodb/0.1#hasComponent
+<https://mardi4nfdi.de/mathalgodb/0.1#hasComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://mardi4nfdi.de/mathalgodb/0.1#hasComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<https://mardi4nfdi.de/mathalgodb/0.1#hasComponent> <http://www.w3.org/2000/01/rdf-schema#domain> <https://mardi4nfdi.de/mathalgodb/0.1#algorithm> .
+<https://mardi4nfdi.de/mathalgodb/0.1#hasComponent> <http://www.w3.org/2000/01/rdf-schema#range> <https://mardi4nfdi.de/mathalgodb/0.1#algorithm> .
+<https://mardi4nfdi.de/mathalgodb/0.1#hasComponent> <http://www.w3.org/2000/01/rdf-schema#label> "has component" .
+<https://mardi4nfdi.de/mathalgodb/0.1#hasComponent> <http://www.w3.org/2002/07/owl#cardinality> "40"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# https://mardi4nfdi.de/mathalgodb/0.1#hasSubclass
+<https://mardi4nfdi.de/mathalgodb/0.1#hasSubclass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://mardi4nfdi.de/mathalgodb/0.1#hasSubclass> <http://www.w3.org/2002/07/owl#inverseOf> <https://mardi4nfdi.de/mathalgodb/0.1#subclassOf> .
+<https://mardi4nfdi.de/mathalgodb/0.1#hasSubclass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<https://mardi4nfdi.de/mathalgodb/0.1#hasSubclass> <http://www.w3.org/2000/01/rdf-schema#domain> <https://mardi4nfdi.de/mathalgodb/0.1#algorithm> .
+<https://mardi4nfdi.de/mathalgodb/0.1#hasSubclass> <http://www.w3.org/2000/01/rdf-schema#range> <https://mardi4nfdi.de/mathalgodb/0.1#algorithm> .
+<https://mardi4nfdi.de/mathalgodb/0.1#hasSubclass> <http://www.w3.org/2000/01/rdf-schema#label> "has subclass" .
+<https://mardi4nfdi.de/mathalgodb/0.1#hasSubclass> <http://www.w3.org/2002/07/owl#cardinality> "20"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# https://mardi4nfdi.de/mathalgodb/0.1#implementedBy
+<https://mardi4nfdi.de/mathalgodb/0.1#implementedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://mardi4nfdi.de/mathalgodb/0.1#implementedBy> <http://www.w3.org/2002/07/owl#inverseOf> <https://mardi4nfdi.de/mathalgodb/0.1#implements> .
+<https://mardi4nfdi.de/mathalgodb/0.1#implementedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://mardi4nfdi.de/mathalgodb/0.1#algorithm> .
+<https://mardi4nfdi.de/mathalgodb/0.1#implementedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://mardi4nfdi.de/mathalgodb/0.1#software> .
+<https://mardi4nfdi.de/mathalgodb/0.1#implementedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is implemented by" .
+<https://mardi4nfdi.de/mathalgodb/0.1#implementedBy> <http://www.w3.org/2002/07/owl#cardinality> "100"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# https://mardi4nfdi.de/mathalgodb/0.1#implements
+<https://mardi4nfdi.de/mathalgodb/0.1#implements> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://mardi4nfdi.de/mathalgodb/0.1#implements> <http://www.w3.org/2000/01/rdf-schema#domain> <https://mardi4nfdi.de/mathalgodb/0.1#software> .
+<https://mardi4nfdi.de/mathalgodb/0.1#implements> <http://www.w3.org/2000/01/rdf-schema#range> <https://mardi4nfdi.de/mathalgodb/0.1#algorithm> .
+<https://mardi4nfdi.de/mathalgodb/0.1#implements> <http://www.w3.org/2000/01/rdf-schema#label> "implements" .
+<https://mardi4nfdi.de/mathalgodb/0.1#implements> <http://www.w3.org/2002/07/owl#cardinality> "100"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# https://mardi4nfdi.de/mathalgodb/0.1#instanceOf
+<https://mardi4nfdi.de/mathalgodb/0.1#instanceOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://mardi4nfdi.de/mathalgodb/0.1#instanceOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://mardi4nfdi.de/mathalgodb/0.1#benchmark> .
+<https://mardi4nfdi.de/mathalgodb/0.1#instanceOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://mardi4nfdi.de/mathalgodb/0.1#problem> .
+<https://mardi4nfdi.de/mathalgodb/0.1#instanceOf> <http://www.w3.org/2000/01/rdf-schema#label> "is instance of" .
+<https://mardi4nfdi.de/mathalgodb/0.1#instanceOf> <http://www.w3.org/2002/07/owl#cardinality> "100"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# https://mardi4nfdi.de/mathalgodb/0.1#instantiates
+<https://mardi4nfdi.de/mathalgodb/0.1#instantiates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://mardi4nfdi.de/mathalgodb/0.1#instantiates> <http://www.w3.org/2002/07/owl#inverseOf> <https://mardi4nfdi.de/mathalgodb/0.1#instanceOf> .
+<https://mardi4nfdi.de/mathalgodb/0.1#instantiates> <http://www.w3.org/2000/01/rdf-schema#domain> <https://mardi4nfdi.de/mathalgodb/0.1#problem> .
+<https://mardi4nfdi.de/mathalgodb/0.1#instantiates> <http://www.w3.org/2000/01/rdf-schema#range> <https://mardi4nfdi.de/mathalgodb/0.1#benchmark> .
+<https://mardi4nfdi.de/mathalgodb/0.1#instantiates> <http://www.w3.org/2000/01/rdf-schema#label> "instantiates" .
+<https://mardi4nfdi.de/mathalgodb/0.1#instantiates> <http://www.w3.org/2002/07/owl#cardinality> "100"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# https://mardi4nfdi.de/mathalgodb/0.1#inventedIn
+<https://mardi4nfdi.de/mathalgodb/0.1#inventedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://mardi4nfdi.de/mathalgodb/0.1#inventedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://mardi4nfdi.de/mathalgodb/0.1#algorithm> .
+<https://mardi4nfdi.de/mathalgodb/0.1#inventedIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://mardi4nfdi.de/mathalgodb/0.1#publication> .
+<https://mardi4nfdi.de/mathalgodb/0.1#inventedIn> <http://www.w3.org/2000/01/rdf-schema#label> "is invented in" .
+<https://mardi4nfdi.de/mathalgodb/0.1#inventedIn> <http://www.w3.org/2002/07/owl#cardinality> "50"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# https://mardi4nfdi.de/mathalgodb/0.1#invents
+<https://mardi4nfdi.de/mathalgodb/0.1#invents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://mardi4nfdi.de/mathalgodb/0.1#invents> <http://www.w3.org/2002/07/owl#inverseOf> <https://mardi4nfdi.de/mathalgodb/0.1#inventedIn> .
+<https://mardi4nfdi.de/mathalgodb/0.1#invents> <http://www.w3.org/2000/01/rdf-schema#domain> <https://mardi4nfdi.de/mathalgodb/0.1#publication> .
+<https://mardi4nfdi.de/mathalgodb/0.1#invents> <http://www.w3.org/2000/01/rdf-schema#range> <https://mardi4nfdi.de/mathalgodb/0.1#algorithm> .
+<https://mardi4nfdi.de/mathalgodb/0.1#invents> <http://www.w3.org/2000/01/rdf-schema#label> "invents" .
+<https://mardi4nfdi.de/mathalgodb/0.1#invents> <http://www.w3.org/2002/07/owl#cardinality> "50"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# https://mardi4nfdi.de/mathalgodb/0.1#relatedTo
+<https://mardi4nfdi.de/mathalgodb/0.1#relatedTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://mardi4nfdi.de/mathalgodb/0.1#relatedTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<https://mardi4nfdi.de/mathalgodb/0.1#relatedTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<https://mardi4nfdi.de/mathalgodb/0.1#relatedTo> <http://www.w3.org/2000/01/rdf-schema#domain> <https://mardi4nfdi.de/mathalgodb/0.1#algorithm> .
+<https://mardi4nfdi.de/mathalgodb/0.1#relatedTo> <http://www.w3.org/2000/01/rdf-schema#range> <https://mardi4nfdi.de/mathalgodb/0.1#algorithm> .
+<https://mardi4nfdi.de/mathalgodb/0.1#relatedTo> <http://www.w3.org/2000/01/rdf-schema#label> "is related to" .
+<https://mardi4nfdi.de/mathalgodb/0.1#relatedTo> <http://www.w3.org/2002/07/owl#cardinality> "30"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# https://mardi4nfdi.de/mathalgodb/0.1#reviewedIn
+<https://mardi4nfdi.de/mathalgodb/0.1#reviewedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://mardi4nfdi.de/mathalgodb/0.1#reviewedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://mardi4nfdi.de/mathalgodb/0.1#algorithm> .
+<https://mardi4nfdi.de/mathalgodb/0.1#reviewedIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://mardi4nfdi.de/mathalgodb/0.1#publication> .
+<https://mardi4nfdi.de/mathalgodb/0.1#reviewedIn> <http://www.w3.org/2000/01/rdf-schema#label> "is surveyed in" .
+<https://mardi4nfdi.de/mathalgodb/0.1#reviewedIn> <http://www.w3.org/2002/07/owl#cardinality> "90"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# https://mardi4nfdi.de/mathalgodb/0.1#reviews
+<https://mardi4nfdi.de/mathalgodb/0.1#reviews> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://mardi4nfdi.de/mathalgodb/0.1#reviews> <http://www.w3.org/2002/07/owl#inverseOf> <https://mardi4nfdi.de/mathalgodb/0.1#reviewedIn> .
+<https://mardi4nfdi.de/mathalgodb/0.1#reviews> <http://www.w3.org/2000/01/rdf-schema#domain> <https://mardi4nfdi.de/mathalgodb/0.1#publication> .
+<https://mardi4nfdi.de/mathalgodb/0.1#reviews> <http://www.w3.org/2000/01/rdf-schema#range> <https://mardi4nfdi.de/mathalgodb/0.1#algorithm> .
+<https://mardi4nfdi.de/mathalgodb/0.1#reviews> <http://www.w3.org/2000/01/rdf-schema#label> "surveys" .
+<https://mardi4nfdi.de/mathalgodb/0.1#reviews> <http://www.w3.org/2002/07/owl#cardinality> "90"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# https://mardi4nfdi.de/mathalgodb/0.1#solvedBy
+<https://mardi4nfdi.de/mathalgodb/0.1#solvedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://mardi4nfdi.de/mathalgodb/0.1#solvedBy> <http://www.w3.org/2002/07/owl#inverseOf> <https://mardi4nfdi.de/mathalgodb/0.1#solves> .
+<https://mardi4nfdi.de/mathalgodb/0.1#solvedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://mardi4nfdi.de/mathalgodb/0.1#problem> .
+<https://mardi4nfdi.de/mathalgodb/0.1#solvedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://mardi4nfdi.de/mathalgodb/0.1#algorithm> .
+<https://mardi4nfdi.de/mathalgodb/0.1#solvedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is solved by" .
+<https://mardi4nfdi.de/mathalgodb/0.1#solvedBy> <http://www.w3.org/2002/07/owl#cardinality> "10"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# https://mardi4nfdi.de/mathalgodb/0.1#solves
+<https://mardi4nfdi.de/mathalgodb/0.1#solves> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://mardi4nfdi.de/mathalgodb/0.1#solves> <http://www.w3.org/2000/01/rdf-schema#domain> <https://mardi4nfdi.de/mathalgodb/0.1#algorithm> .
+<https://mardi4nfdi.de/mathalgodb/0.1#solves> <http://www.w3.org/2000/01/rdf-schema#range> <https://mardi4nfdi.de/mathalgodb/0.1#problem> .
+<https://mardi4nfdi.de/mathalgodb/0.1#solves> <http://www.w3.org/2000/01/rdf-schema#label> "solves" .
+<https://mardi4nfdi.de/mathalgodb/0.1#solves> <http://www.w3.org/2002/07/owl#cardinality> "10"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# https://mardi4nfdi.de/mathalgodb/0.1#specializedBy
+<https://mardi4nfdi.de/mathalgodb/0.1#specializedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://mardi4nfdi.de/mathalgodb/0.1#specializedBy> <http://www.w3.org/2002/07/owl#inverseOf> <https://mardi4nfdi.de/mathalgodb/0.1#specializes> .
+<https://mardi4nfdi.de/mathalgodb/0.1#specializedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<https://mardi4nfdi.de/mathalgodb/0.1#specializedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://mardi4nfdi.de/mathalgodb/0.1#problem> .
+<https://mardi4nfdi.de/mathalgodb/0.1#specializedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://mardi4nfdi.de/mathalgodb/0.1#problem> .
+<https://mardi4nfdi.de/mathalgodb/0.1#specializedBy> <http://www.w3.org/2000/01/rdf-schema#label> "specializedBy" .
+<https://mardi4nfdi.de/mathalgodb/0.1#specializedBy> <http://www.w3.org/2002/07/owl#cardinality> "5"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# https://mardi4nfdi.de/mathalgodb/0.1#specializes
+<https://mardi4nfdi.de/mathalgodb/0.1#specializes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://mardi4nfdi.de/mathalgodb/0.1#specializes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<https://mardi4nfdi.de/mathalgodb/0.1#specializes> <http://www.w3.org/2000/01/rdf-schema#domain> <https://mardi4nfdi.de/mathalgodb/0.1#problem> .
+<https://mardi4nfdi.de/mathalgodb/0.1#specializes> <http://www.w3.org/2000/01/rdf-schema#range> <https://mardi4nfdi.de/mathalgodb/0.1#problem> .
+<https://mardi4nfdi.de/mathalgodb/0.1#specializes> <http://www.w3.org/2000/01/rdf-schema#label> "specializes" .
+<https://mardi4nfdi.de/mathalgodb/0.1#specializes> <http://www.w3.org/2002/07/owl#cardinality> "5"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# https://mardi4nfdi.de/mathalgodb/0.1#studiedIn
+<https://mardi4nfdi.de/mathalgodb/0.1#studiedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://mardi4nfdi.de/mathalgodb/0.1#studiedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://mardi4nfdi.de/mathalgodb/0.1#algorithm> .
+<https://mardi4nfdi.de/mathalgodb/0.1#studiedIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://mardi4nfdi.de/mathalgodb/0.1#publication> .
+<https://mardi4nfdi.de/mathalgodb/0.1#studiedIn> <http://www.w3.org/2000/01/rdf-schema#label> "is studied in" .
+<https://mardi4nfdi.de/mathalgodb/0.1#studiedIn> <http://www.w3.org/2002/07/owl#cardinality> "70"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# https://mardi4nfdi.de/mathalgodb/0.1#studies
+<https://mardi4nfdi.de/mathalgodb/0.1#studies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://mardi4nfdi.de/mathalgodb/0.1#studies> <http://www.w3.org/2002/07/owl#inverseOf> <https://mardi4nfdi.de/mathalgodb/0.1#studiedIn> .
+<https://mardi4nfdi.de/mathalgodb/0.1#studies> <http://www.w3.org/2000/01/rdf-schema#domain> <https://mardi4nfdi.de/mathalgodb/0.1#publication> .
+<https://mardi4nfdi.de/mathalgodb/0.1#studies> <http://www.w3.org/2000/01/rdf-schema#range> <https://mardi4nfdi.de/mathalgodb/0.1#algorithm> .
+<https://mardi4nfdi.de/mathalgodb/0.1#studies> <http://www.w3.org/2000/01/rdf-schema#label> "studies" .
+<https://mardi4nfdi.de/mathalgodb/0.1#studies> <http://www.w3.org/2002/07/owl#cardinality> "70"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# https://mardi4nfdi.de/mathalgodb/0.1#subclassOf
+<https://mardi4nfdi.de/mathalgodb/0.1#subclassOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://mardi4nfdi.de/mathalgodb/0.1#subclassOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<https://mardi4nfdi.de/mathalgodb/0.1#subclassOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://mardi4nfdi.de/mathalgodb/0.1#algorithm> .
+<https://mardi4nfdi.de/mathalgodb/0.1#subclassOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://mardi4nfdi.de/mathalgodb/0.1#algorithm> .
+<https://mardi4nfdi.de/mathalgodb/0.1#subclassOf> <http://www.w3.org/2000/01/rdf-schema#label> "is subclass of" .
+<https://mardi4nfdi.de/mathalgodb/0.1#subclassOf> <http://www.w3.org/2002/07/owl#cardinality> "20"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# https://mardi4nfdi.de/mathalgodb/0.1#testedBy
+<https://mardi4nfdi.de/mathalgodb/0.1#testedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://mardi4nfdi.de/mathalgodb/0.1#testedBy> <http://www.w3.org/2002/07/owl#inverseOf> <https://mardi4nfdi.de/mathalgodb/0.1#tests> .
+<https://mardi4nfdi.de/mathalgodb/0.1#testedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://mardi4nfdi.de/mathalgodb/0.1#benchmark> .
+<https://mardi4nfdi.de/mathalgodb/0.1#testedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://mardi4nfdi.de/mathalgodb/0.1#software> .
+<https://mardi4nfdi.de/mathalgodb/0.1#testedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is tested by" .
+<https://mardi4nfdi.de/mathalgodb/0.1#testedBy> <http://www.w3.org/2002/07/owl#cardinality> "110"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# https://mardi4nfdi.de/mathalgodb/0.1#tests
+<https://mardi4nfdi.de/mathalgodb/0.1#tests> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://mardi4nfdi.de/mathalgodb/0.1#tests> <http://www.w3.org/2000/01/rdf-schema#domain> <https://mardi4nfdi.de/mathalgodb/0.1#software> .
+<https://mardi4nfdi.de/mathalgodb/0.1#tests> <http://www.w3.org/2000/01/rdf-schema#range> <https://mardi4nfdi.de/mathalgodb/0.1#benchmark> .
+<https://mardi4nfdi.de/mathalgodb/0.1#tests> <http://www.w3.org/2000/01/rdf-schema#label> "tests" .
+<https://mardi4nfdi.de/mathalgodb/0.1#tests> <http://www.w3.org/2002/07/owl#cardinality> "110"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# https://mardi4nfdi.de/mathalgodb/0.1#usedIn
+<https://mardi4nfdi.de/mathalgodb/0.1#usedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://mardi4nfdi.de/mathalgodb/0.1#usedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://mardi4nfdi.de/mathalgodb/0.1#realization> .
+<https://mardi4nfdi.de/mathalgodb/0.1#usedIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://mardi4nfdi.de/mathalgodb/0.1#publication> .
+<https://mardi4nfdi.de/mathalgodb/0.1#usedIn> <http://www.w3.org/2000/01/rdf-schema#label> "is used in" .
+<https://mardi4nfdi.de/mathalgodb/0.1#usedIn> <http://www.w3.org/2002/07/owl#cardinality> "130"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# https://mardi4nfdi.de/mathalgodb/0.1#uses
+<https://mardi4nfdi.de/mathalgodb/0.1#uses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://mardi4nfdi.de/mathalgodb/0.1#uses> <http://www.w3.org/2002/07/owl#inverseOf> <https://mardi4nfdi.de/mathalgodb/0.1#usedIn> .
+<https://mardi4nfdi.de/mathalgodb/0.1#uses> <http://www.w3.org/2000/01/rdf-schema#domain> <https://mardi4nfdi.de/mathalgodb/0.1#publication> .
+<https://mardi4nfdi.de/mathalgodb/0.1#uses> <http://www.w3.org/2000/01/rdf-schema#range> <https://mardi4nfdi.de/mathalgodb/0.1#realization> .
+<https://mardi4nfdi.de/mathalgodb/0.1#uses> <http://www.w3.org/2000/01/rdf-schema#label> "uses" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/spar/datacite/hasIdentifier
+<http://purl.org/spar/datacite/hasIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/spar/datacite/hasIdentifier> <http://www.w3.org/2000/01/rdf-schema#domain> <https://mardi4nfdi.de/mathalgodb/0.1#identifiable> .
+<http://purl.org/spar/datacite/hasIdentifier> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/spar/datacite/hasIdentifier> <http://www.w3.org/2000/01/rdf-schema#label> "has identifier" .
+<http://purl.org/spar/datacite/hasIdentifier> <http://www.w3.org/2002/07/owl#cardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# https://mardi4nfdi.de/mathalgodb/0.1#category
+<https://mardi4nfdi.de/mathalgodb/0.1#category> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://mardi4nfdi.de/mathalgodb/0.1#category> <http://www.w3.org/2000/01/rdf-schema#domain> <https://mardi4nfdi.de/mathalgodb/0.1#all_objects> .
+<https://mardi4nfdi.de/mathalgodb/0.1#category> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://mardi4nfdi.de/mathalgodb/0.1#category> <http://www.w3.org/2000/01/rdf-schema#label> "has category" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://mardi4nfdi.de/mathalgodb/0.1#algorithm
+<https://mardi4nfdi.de/mathalgodb/0.1#algorithm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://mardi4nfdi.de/mathalgodb/0.1#algorithm> <http://www.w3.org/2000/01/rdf-schema#comment> "The main building blocks of the graph are algorithms. Here you can take a look at all algorithms documented in the graph." .
+<https://mardi4nfdi.de/mathalgodb/0.1#algorithm> <http://www.w3.org/2000/01/rdf-schema#label> "Algorithm" .
+<https://mardi4nfdi.de/mathalgodb/0.1#algorithm> <http://www.w3.org/2002/07/owl#cardinality> "10"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# https://mardi4nfdi.de/mathalgodb/0.1#all_objects
+<https://mardi4nfdi.de/mathalgodb/0.1#all_objects> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://mardi4nfdi.de/mathalgodb/0.1#all_objects> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://mardi4nfdi.de/mathalgodb/0.1#software> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://mardi4nfdi.de/mathalgodb/0.1#publication> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://mardi4nfdi.de/mathalgodb/0.1#problem> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://mardi4nfdi.de/mathalgodb/0.1#benchmark> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://mardi4nfdi.de/mathalgodb/0.1#algorithm> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://mardi4nfdi.de/mathalgodb/0.1#all_objects> <http://www.w3.org/2000/01/rdf-schema#label> "All allgodata objects" .
+# 
+# https://mardi4nfdi.de/mathalgodb/0.1#benchmark
+<https://mardi4nfdi.de/mathalgodb/0.1#benchmark> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://mardi4nfdi.de/mathalgodb/0.1#benchmark> <http://www.w3.org/2000/01/rdf-schema#comment> "For testing, evaluating and comparing numerical algorithms, so called benchmark problems are often useful." .
+<https://mardi4nfdi.de/mathalgodb/0.1#benchmark> <http://www.w3.org/2000/01/rdf-schema#label> "Benchmark" .
+<https://mardi4nfdi.de/mathalgodb/0.1#benchmark> <http://www.w3.org/2002/07/owl#cardinality> "40"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# https://mardi4nfdi.de/mathalgodb/0.1#identifiable
+<https://mardi4nfdi.de/mathalgodb/0.1#identifiable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://mardi4nfdi.de/mathalgodb/0.1#identifiable> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#unionOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://mardi4nfdi.de/mathalgodb/0.1#software> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://mardi4nfdi.de/mathalgodb/0.1#publication> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://mardi4nfdi.de/mathalgodb/0.1#benchmark> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://mardi4nfdi.de/mathalgodb/0.1#identifiable> <http://www.w3.org/2000/01/rdf-schema#label> "Identifiable" .
+# 
+# https://mardi4nfdi.de/mathalgodb/0.1#problem
+<https://mardi4nfdi.de/mathalgodb/0.1#problem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://mardi4nfdi.de/mathalgodb/0.1#problem> <http://www.w3.org/2000/01/rdf-schema#comment> "When interested in algorithms solving a certain problem at hand, we here provide an overview of all problems defined in the graph." .
+<https://mardi4nfdi.de/mathalgodb/0.1#problem> <http://www.w3.org/2000/01/rdf-schema#label> "Algorithmic Task" .
+<https://mardi4nfdi.de/mathalgodb/0.1#problem> <http://www.w3.org/2002/07/owl#cardinality> "30"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<https://mardi4nfdi.de/mathalgodb/0.1#problem> <http://www.w3.org/2004/02/skos/core#definition> "An engineering challenge that includes a mathematical part" .
+# 
+# https://mardi4nfdi.de/mathalgodb/0.1#publication
+<https://mardi4nfdi.de/mathalgodb/0.1#publication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://mardi4nfdi.de/mathalgodb/0.1#publication> <http://www.w3.org/2000/01/rdf-schema#comment> "To find theoretical or numerical results on the performance of algorithms, take a look at the related publications in this list." .
+<https://mardi4nfdi.de/mathalgodb/0.1#publication> <http://www.w3.org/2000/01/rdf-schema#label> "Publication" .
+<https://mardi4nfdi.de/mathalgodb/0.1#publication> <http://www.w3.org/2002/07/owl#cardinality> "100"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# https://mardi4nfdi.de/mathalgodb/0.1#realization
+<https://mardi4nfdi.de/mathalgodb/0.1#realization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://mardi4nfdi.de/mathalgodb/0.1#realization> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid11 .
+_:genid11 <http://www.w3.org/2002/07/owl#unionOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://mardi4nfdi.de/mathalgodb/0.1#software> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://mardi4nfdi.de/mathalgodb/0.1#benchmark> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://mardi4nfdi.de/mathalgodb/0.1#realization> <http://www.w3.org/2000/01/rdf-schema#label> "Realization" .
+<https://mardi4nfdi.de/mathalgodb/0.1#realization> <http://www.w3.org/2004/02/skos/core#definition> "\n    Union of all MathAlgoDB-Classes that *may* have a unique identifier.\n    " .
+# 
+# https://mardi4nfdi.de/mathalgodb/0.1#software
+<https://mardi4nfdi.de/mathalgodb/0.1#software> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://mardi4nfdi.de/mathalgodb/0.1#software> <http://www.w3.org/2000/01/rdf-schema#comment> "This table contains software packages that implement some of the algorithms from the graph." .
+<https://mardi4nfdi.de/mathalgodb/0.1#software> <http://www.w3.org/2000/01/rdf-schema#label> "Software" .
+<https://mardi4nfdi.de/mathalgodb/0.1#software> <http://www.w3.org/2002/07/owl#cardinality> "20"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

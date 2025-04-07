@@ -1,0 +1,968 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://purl.org/spar/datacite", "https://mardi4nfdi.de/mathalgodb/0.1", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema" ],
+    "title" : {
+      "undefined" : "Algorithm Knowledge Graph Ontology"
+    },
+    "iri" : "https://mardi4nfdi.de/mathalgodb/0.1",
+    "version" : "0.1",
+    "author" : [ "René Fritze (https://orcid.org/0000-0002-9548-2238)", "Christian Himpe (https://orcid.org/0000-0003-2194-6754)", "Stephan Rave (https://orcid.org/0000-0003-0439-7212)", "Hendrik Kleikamp (https://orcid.org/0000-0003-1264-5941)", "Frank Wübbeling (https://orcid.org/0000-0002-2375-2008)" ],
+    "description" : {
+      "undefined" : "This vocabulary and grammar defines which types of objects are admissible to the MathAlgoDB -\n                        the algorithm knowledge graph - and by which properties they can relate. All in all five\n                        classes, \"problem\", \"algorithm\", \"benchmark\", \"software\", \"publication\", are defined,\n                        as well as a minimal but intuitively intelligible number of properties. As opposed to the more\n                        liberal WikiData, MathAlgoDB relies on the strict adherence to the ontology to provide a reliable\n                        machine-readable database of (numerical) algorithm knowledge."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Christian Himpe (https://orcid.org/0000-0003-2194-6754)",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Stephan Rave (https://orcid.org/0000-0003-0439-7212)",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Hendrik Kleikamp (https://orcid.org/0000-0003-1264-5941)",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Frank Wübbeling (https://orcid.org/0000-0002-2375-2008)",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "René Fritze (https://orcid.org/0000-0002-9548-2238)",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "mathalgodb",
+        "type" : "label"
+      } ],
+      "logo" : [ {
+        "identifier" : "logo",
+        "language" : "undefined",
+        "value" : "https://workshop.mardi.ovh/images/MaRDI_Logo_S_5_rgb.svg",
+        "type" : "iri"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.1",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://mardi4nfdi.de/mathalgodb/0.1#",
+        "type" : "label"
+      } ],
+      "bibliographicCitation" : [ {
+        "identifier" : "bibliographicCitation",
+        "language" : "undefined",
+        "value" : "MaRDI Task Area 2 - Scientific Computing @ University of Münster. MathAlgoDB - Algorithm Knowledge Graph - Ontology (Version 0.1). MaRDI (Mathematical Research Data Initiative), 2022. https://mardi4nfdi.de/mathalgodb/0.1",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "Algorithm Knowledge Graph Ontology",
+        "type" : "label"
+      } ],
+      "status" : [ {
+        "identifier" : "status",
+        "language" : "undefined",
+        "value" : "Draft",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "10",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:unionOf"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://mardi4nfdi.de/mathalgodb/0.1#all_objects",
+    "baseIri" : "https://mardi4nfdi.de/mathalgodb/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "all_objects",
+      "undefined" : "All allgodata objects"
+    },
+    "union" : [ "5", "11", "1", "8", "2" ],
+    "attributes" : [ "union" ],
+    "id" : "10"
+  }, {
+    "iri" : "https://mardi4nfdi.de/mathalgodb/0.1#software",
+    "baseIri" : "https://mardi4nfdi.de/mathalgodb/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "cardinality" : [ {
+        "identifier" : "cardinality",
+        "language" : "undefined",
+        "value" : "20",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "software",
+      "undefined" : "Software"
+    },
+    "comment" : {
+      "undefined" : "This table contains software packages that implement some of the algorithms from the graph."
+    },
+    "id" : "11"
+  }, {
+    "iri" : "https://mardi4nfdi.de/mathalgodb/0.1#problem",
+    "baseIri" : "https://mardi4nfdi.de/mathalgodb/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "An engineering challenge that includes a mathematical part",
+        "type" : "label"
+      } ],
+      "cardinality" : [ {
+        "identifier" : "cardinality",
+        "language" : "undefined",
+        "value" : "30",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "problem",
+      "undefined" : "Algorithmic Task"
+    },
+    "comment" : {
+      "undefined" : "When interested in algorithms solving a certain problem at hand, we here provide an overview of all problems defined in the graph."
+    },
+    "id" : "1"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "26",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "21",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://mardi4nfdi.de/mathalgodb/0.1#benchmark",
+    "baseIri" : "https://mardi4nfdi.de/mathalgodb/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "cardinality" : [ {
+        "identifier" : "cardinality",
+        "language" : "undefined",
+        "value" : "40",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "benchmark",
+      "undefined" : "Benchmark"
+    },
+    "comment" : {
+      "undefined" : "For testing, evaluating and comparing numerical algorithms, so called benchmark problems are often useful."
+    },
+    "id" : "5"
+  }, {
+    "iri" : "https://mardi4nfdi.de/mathalgodb/0.1#realization",
+    "baseIri" : "https://mardi4nfdi.de/mathalgodb/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "\n    Union of all MathAlgoDB-Classes that *may* have a unique identifier.\n    ",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "realization",
+      "undefined" : "Realization"
+    },
+    "union" : [ "5", "11" ],
+    "attributes" : [ "union" ],
+    "id" : "7"
+  }, {
+    "iri" : "https://mardi4nfdi.de/mathalgodb/0.1#publication",
+    "baseIri" : "https://mardi4nfdi.de/mathalgodb/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "cardinality" : [ {
+        "identifier" : "cardinality",
+        "language" : "undefined",
+        "value" : "100",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "publication",
+      "undefined" : "Publication"
+    },
+    "comment" : {
+      "undefined" : "To find theoretical or numerical results on the performance of algorithms, take a look at the related publications in this list."
+    },
+    "id" : "8"
+  }, {
+    "iri" : "https://mardi4nfdi.de/mathalgodb/0.1#algorithm",
+    "baseIri" : "https://mardi4nfdi.de/mathalgodb/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "cardinality" : [ {
+        "identifier" : "cardinality",
+        "language" : "undefined",
+        "value" : "10",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "algorithm",
+      "undefined" : "Algorithm"
+    },
+    "comment" : {
+      "undefined" : "The main building blocks of the graph are algorithms. Here you can take a look at all algorithms documented in the graph."
+    },
+    "id" : "2"
+  }, {
+    "iri" : "https://mardi4nfdi.de/mathalgodb/0.1#identifiable",
+    "baseIri" : "https://mardi4nfdi.de/mathalgodb/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "identifiable",
+      "undefined" : "Identifiable"
+    },
+    "union" : [ "5", "11", "8" ],
+    "attributes" : [ "union" ],
+    "id" : "28"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "4",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "9",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "13",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "14",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "17",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "22",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "25",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "15",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "24",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "27",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "29",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "30",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "32",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "33",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "36",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "37",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "38",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "31",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "39",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "40",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "34",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://mardi4nfdi.de/mathalgodb/0.1#solvedBy",
+    "inverse" : "3",
+    "baseIri" : "https://mardi4nfdi.de/mathalgodb/0.1",
+    "range" : "2",
+    "annotations" : {
+      "cardinality" : [ {
+        "identifier" : "cardinality",
+        "language" : "undefined",
+        "value" : "10",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "solvedBy",
+      "undefined" : "is solved by"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://mardi4nfdi.de/mathalgodb/0.1#instanceOf",
+    "baseIri" : "https://mardi4nfdi.de/mathalgodb/0.1",
+    "range" : "1",
+    "annotations" : {
+      "cardinality" : [ {
+        "identifier" : "cardinality",
+        "language" : "undefined",
+        "value" : "100",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "instanceOf",
+      "undefined" : "is instance of"
+    },
+    "domain" : "5",
+    "attributes" : [ "object" ],
+    "id" : "4"
+  }, {
+    "iri" : "https://mardi4nfdi.de/mathalgodb/0.1#solves",
+    "baseIri" : "https://mardi4nfdi.de/mathalgodb/0.1",
+    "range" : "1",
+    "annotations" : {
+      "cardinality" : [ {
+        "identifier" : "cardinality",
+        "language" : "undefined",
+        "value" : "10",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "solves",
+      "undefined" : "solves"
+    },
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "3"
+  }, {
+    "iri" : "https://mardi4nfdi.de/mathalgodb/0.1#documentedIn",
+    "baseIri" : "https://mardi4nfdi.de/mathalgodb/0.1",
+    "range" : "8",
+    "annotations" : {
+      "cardinality" : [ {
+        "identifier" : "cardinality",
+        "language" : "undefined",
+        "value" : "120",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "documentedIn",
+      "undefined" : "is documented in"
+    },
+    "domain" : "7",
+    "attributes" : [ "object" ],
+    "id" : "6"
+  }, {
+    "iri" : "https://mardi4nfdi.de/mathalgodb/0.1#analyzedIn",
+    "baseIri" : "https://mardi4nfdi.de/mathalgodb/0.1",
+    "range" : "8",
+    "annotations" : {
+      "cardinality" : [ {
+        "identifier" : "cardinality",
+        "language" : "undefined",
+        "value" : "60",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "analyzedIn",
+      "undefined" : "is analyzed in"
+    },
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "9"
+  }, {
+    "iri" : "https://mardi4nfdi.de/mathalgodb/0.1#inventedIn",
+    "baseIri" : "https://mardi4nfdi.de/mathalgodb/0.1",
+    "range" : "8",
+    "annotations" : {
+      "cardinality" : [ {
+        "identifier" : "cardinality",
+        "language" : "undefined",
+        "value" : "50",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "inventedIn",
+      "undefined" : "is invented in"
+    },
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "12"
+  }, {
+    "iri" : "https://mardi4nfdi.de/mathalgodb/0.1#invents",
+    "inverse" : "12",
+    "baseIri" : "https://mardi4nfdi.de/mathalgodb/0.1",
+    "range" : "2",
+    "annotations" : {
+      "cardinality" : [ {
+        "identifier" : "cardinality",
+        "language" : "undefined",
+        "value" : "50",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "invents",
+      "undefined" : "invents"
+    },
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "13"
+  }, {
+    "iri" : "https://mardi4nfdi.de/mathalgodb/0.1#reviews",
+    "inverse" : "15",
+    "baseIri" : "https://mardi4nfdi.de/mathalgodb/0.1",
+    "range" : "2",
+    "annotations" : {
+      "cardinality" : [ {
+        "identifier" : "cardinality",
+        "language" : "undefined",
+        "value" : "90",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "reviews",
+      "undefined" : "surveys"
+    },
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "14"
+  }, {
+    "iri" : "https://mardi4nfdi.de/mathalgodb/0.1#studiedIn",
+    "baseIri" : "https://mardi4nfdi.de/mathalgodb/0.1",
+    "range" : "8",
+    "annotations" : {
+      "cardinality" : [ {
+        "identifier" : "cardinality",
+        "language" : "undefined",
+        "value" : "70",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "studiedIn",
+      "undefined" : "is studied in"
+    },
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "16"
+  }, {
+    "iri" : "https://mardi4nfdi.de/mathalgodb/0.1#appliedIn",
+    "baseIri" : "https://mardi4nfdi.de/mathalgodb/0.1",
+    "range" : "8",
+    "annotations" : {
+      "cardinality" : [ {
+        "identifier" : "cardinality",
+        "language" : "undefined",
+        "value" : "80",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "appliedIn",
+      "undefined" : "is applied in"
+    },
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "17"
+  }, {
+    "iri" : "https://mardi4nfdi.de/mathalgodb/0.1#instantiates",
+    "inverse" : "4",
+    "baseIri" : "https://mardi4nfdi.de/mathalgodb/0.1",
+    "range" : "5",
+    "annotations" : {
+      "cardinality" : [ {
+        "identifier" : "cardinality",
+        "language" : "undefined",
+        "value" : "100",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "instantiates",
+      "undefined" : "instantiates"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "18"
+  }, {
+    "iri" : "https://mardi4nfdi.de/mathalgodb/0.1#tests",
+    "baseIri" : "https://mardi4nfdi.de/mathalgodb/0.1",
+    "range" : "5",
+    "annotations" : {
+      "cardinality" : [ {
+        "identifier" : "cardinality",
+        "language" : "undefined",
+        "value" : "110",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "tests",
+      "undefined" : "tests"
+    },
+    "domain" : "11",
+    "attributes" : [ "object" ],
+    "id" : "19"
+  }, {
+    "iri" : "https://mardi4nfdi.de/mathalgodb/0.1#category",
+    "baseIri" : "https://mardi4nfdi.de/mathalgodb/0.1",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "category",
+      "undefined" : "has category"
+    },
+    "domain" : "10",
+    "attributes" : [ "datatype" ],
+    "id" : "20"
+  }, {
+    "iri" : "https://mardi4nfdi.de/mathalgodb/0.1#documents",
+    "inverse" : "6",
+    "baseIri" : "https://mardi4nfdi.de/mathalgodb/0.1",
+    "range" : "7",
+    "annotations" : {
+      "cardinality" : [ {
+        "identifier" : "cardinality",
+        "language" : "undefined",
+        "value" : "120",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "documents",
+      "undefined" : "documents"
+    },
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "22"
+  }, {
+    "iri" : "https://mardi4nfdi.de/mathalgodb/0.1#hasSubclass",
+    "inverse" : "24",
+    "baseIri" : "https://mardi4nfdi.de/mathalgodb/0.1",
+    "range" : "2",
+    "annotations" : {
+      "cardinality" : [ {
+        "identifier" : "cardinality",
+        "language" : "undefined",
+        "value" : "20",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasSubclass",
+      "undefined" : "has subclass"
+    },
+    "domain" : "2",
+    "attributes" : [ "transitive", "object" ],
+    "id" : "23"
+  }, {
+    "iri" : "https://mardi4nfdi.de/mathalgodb/0.1#relatedTo",
+    "baseIri" : "https://mardi4nfdi.de/mathalgodb/0.1",
+    "range" : "2",
+    "annotations" : {
+      "cardinality" : [ {
+        "identifier" : "cardinality",
+        "language" : "undefined",
+        "value" : "30",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "relatedTo",
+      "undefined" : "is related to"
+    },
+    "domain" : "2",
+    "attributes" : [ "symmetric", "transitive", "object" ],
+    "id" : "25"
+  }, {
+    "iri" : "https://mardi4nfdi.de/mathalgodb/0.1#reviewedIn",
+    "baseIri" : "https://mardi4nfdi.de/mathalgodb/0.1",
+    "range" : "8",
+    "annotations" : {
+      "cardinality" : [ {
+        "identifier" : "cardinality",
+        "language" : "undefined",
+        "value" : "90",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "reviewedIn",
+      "undefined" : "is surveyed in"
+    },
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "15"
+  }, {
+    "iri" : "https://mardi4nfdi.de/mathalgodb/0.1#subclassOf",
+    "baseIri" : "https://mardi4nfdi.de/mathalgodb/0.1",
+    "range" : "2",
+    "annotations" : {
+      "cardinality" : [ {
+        "identifier" : "cardinality",
+        "language" : "undefined",
+        "value" : "20",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "subclassOf",
+      "undefined" : "is subclass of"
+    },
+    "domain" : "2",
+    "attributes" : [ "transitive", "object" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://purl.org/spar/datacite/hasIdentifier",
+    "baseIri" : "http://purl.org/spar/datacite",
+    "range" : "26",
+    "annotations" : {
+      "cardinality" : [ {
+        "identifier" : "cardinality",
+        "language" : "undefined",
+        "value" : "0",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasIdentifier",
+      "undefined" : "has identifier"
+    },
+    "domain" : "28",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "27"
+  }, {
+    "iri" : "https://mardi4nfdi.de/mathalgodb/0.1#applies",
+    "inverse" : "17",
+    "baseIri" : "https://mardi4nfdi.de/mathalgodb/0.1",
+    "range" : "2",
+    "annotations" : {
+      "cardinality" : [ {
+        "identifier" : "cardinality",
+        "language" : "undefined",
+        "value" : "80",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "applies",
+      "undefined" : "applies"
+    },
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "29"
+  }, {
+    "iri" : "https://mardi4nfdi.de/mathalgodb/0.1#uses",
+    "inverse" : "31",
+    "baseIri" : "https://mardi4nfdi.de/mathalgodb/0.1",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "uses",
+      "undefined" : "uses"
+    },
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "30"
+  }, {
+    "iri" : "https://mardi4nfdi.de/mathalgodb/0.1#studies",
+    "inverse" : "16",
+    "baseIri" : "https://mardi4nfdi.de/mathalgodb/0.1",
+    "range" : "2",
+    "annotations" : {
+      "cardinality" : [ {
+        "identifier" : "cardinality",
+        "language" : "undefined",
+        "value" : "70",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "studies",
+      "undefined" : "studies"
+    },
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "32"
+  }, {
+    "iri" : "https://mardi4nfdi.de/mathalgodb/0.1#specializedBy",
+    "inverse" : "34",
+    "baseIri" : "https://mardi4nfdi.de/mathalgodb/0.1",
+    "range" : "1",
+    "annotations" : {
+      "cardinality" : [ {
+        "identifier" : "cardinality",
+        "language" : "undefined",
+        "value" : "5",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "specializedBy",
+      "undefined" : "specializedBy"
+    },
+    "domain" : "1",
+    "attributes" : [ "transitive", "object" ],
+    "id" : "33"
+  }, {
+    "iri" : "https://mardi4nfdi.de/mathalgodb/0.1#hasComponent",
+    "baseIri" : "https://mardi4nfdi.de/mathalgodb/0.1",
+    "range" : "2",
+    "annotations" : {
+      "cardinality" : [ {
+        "identifier" : "cardinality",
+        "language" : "undefined",
+        "value" : "40",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasComponent",
+      "undefined" : "has component"
+    },
+    "domain" : "2",
+    "attributes" : [ "transitive", "object" ],
+    "id" : "35"
+  }, {
+    "iri" : "https://mardi4nfdi.de/mathalgodb/0.1#testedBy",
+    "inverse" : "19",
+    "baseIri" : "https://mardi4nfdi.de/mathalgodb/0.1",
+    "range" : "11",
+    "annotations" : {
+      "cardinality" : [ {
+        "identifier" : "cardinality",
+        "language" : "undefined",
+        "value" : "110",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "testedBy",
+      "undefined" : "is tested by"
+    },
+    "domain" : "5",
+    "attributes" : [ "object" ],
+    "id" : "36"
+  }, {
+    "iri" : "https://mardi4nfdi.de/mathalgodb/0.1#componentOf",
+    "inverse" : "35",
+    "baseIri" : "https://mardi4nfdi.de/mathalgodb/0.1",
+    "range" : "2",
+    "annotations" : {
+      "cardinality" : [ {
+        "identifier" : "cardinality",
+        "language" : "undefined",
+        "value" : "40",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "componentOf",
+      "undefined" : "is component of"
+    },
+    "domain" : "2",
+    "attributes" : [ "transitive", "object" ],
+    "id" : "37"
+  }, {
+    "iri" : "https://mardi4nfdi.de/mathalgodb/0.1#analyzes",
+    "inverse" : "9",
+    "baseIri" : "https://mardi4nfdi.de/mathalgodb/0.1",
+    "range" : "2",
+    "annotations" : {
+      "cardinality" : [ {
+        "identifier" : "cardinality",
+        "language" : "undefined",
+        "value" : "60",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "analyzes",
+      "undefined" : "analyzes"
+    },
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "38"
+  }, {
+    "iri" : "https://mardi4nfdi.de/mathalgodb/0.1#usedIn",
+    "baseIri" : "https://mardi4nfdi.de/mathalgodb/0.1",
+    "range" : "8",
+    "annotations" : {
+      "cardinality" : [ {
+        "identifier" : "cardinality",
+        "language" : "undefined",
+        "value" : "130",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "usedIn",
+      "undefined" : "is used in"
+    },
+    "domain" : "7",
+    "attributes" : [ "object" ],
+    "id" : "31"
+  }, {
+    "iri" : "https://mardi4nfdi.de/mathalgodb/0.1#implementedBy",
+    "inverse" : "40",
+    "baseIri" : "https://mardi4nfdi.de/mathalgodb/0.1",
+    "range" : "11",
+    "annotations" : {
+      "cardinality" : [ {
+        "identifier" : "cardinality",
+        "language" : "undefined",
+        "value" : "100",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "implementedBy",
+      "undefined" : "is implemented by"
+    },
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "39"
+  }, {
+    "iri" : "https://mardi4nfdi.de/mathalgodb/0.1#implements",
+    "baseIri" : "https://mardi4nfdi.de/mathalgodb/0.1",
+    "range" : "2",
+    "annotations" : {
+      "cardinality" : [ {
+        "identifier" : "cardinality",
+        "language" : "undefined",
+        "value" : "100",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "implements",
+      "undefined" : "implements"
+    },
+    "domain" : "11",
+    "attributes" : [ "object" ],
+    "id" : "40"
+  }, {
+    "iri" : "https://mardi4nfdi.de/mathalgodb/0.1#specializes",
+    "baseIri" : "https://mardi4nfdi.de/mathalgodb/0.1",
+    "range" : "1",
+    "annotations" : {
+      "cardinality" : [ {
+        "identifier" : "cardinality",
+        "language" : "undefined",
+        "value" : "5",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "specializes",
+      "undefined" : "specializes"
+    },
+    "domain" : "1",
+    "attributes" : [ "transitive", "object" ],
+    "id" : "34"
+  } ]
+}
