@@ -21,7 +21,7 @@ Technically, the **MathAlgoDB** front-end is based on an RDF data model in Turtl
 - MathAlgoDB_Ontology.ttl holds the OWL definition of the ontology in Turtle File syntax.
 - MathAlgoDB_Data.ttl holds the knowledge graph data for sample fields Numerical Analysis and Model Order Reduction.
 - The graph is available for exploration through the user interface at https://mathalgodb.mardi4nfdi.de/.
-- The ontology documentation is available through https://mathalgodb.mardi4nfdi.de/static/widoco/v1/index-en.html.
+- The ontology documentation is available through https://mardi4nfdi.github.io/MathAlgoDB/.
 
 ## License
 The ontology MathModDB is licensed under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/).
